@@ -29,3 +29,4 @@ A visualisation of the algorithm's output is certainly interesting, but it only 
 Possible ideas:
 
 1.  Some kind of an animation that visualises the motion of the robot for each step of the algorithm.
+2. Hmmm...
