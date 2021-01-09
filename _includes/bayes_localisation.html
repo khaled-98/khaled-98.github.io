@@ -1,0 +1,28 @@
+<style>
+    #world {
+        position: relative;
+        margin: 35px;
+        height: 50px;
+    }
+    #robot {
+        position: absolute;
+        height: 100%;
+        left: 0%;
+    }
+    #line {
+        position: absolute;
+        top: 50px;
+    }
+</style>
+<html>
+    <head>
+        <script src="/assets/js/bayes_localisaton.js"></script>
+    </head>
+    <body>
+        <div id="world">
+            <embed id="robot" src="/assets/images/robot.svg">
+            <embed id="line" src="/assets/images/line.svg">
+        </div>
+        <button type="button" onclick="moveRight()">Move right</button>
+    </body>
+</html> 
