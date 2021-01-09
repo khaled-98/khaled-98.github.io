@@ -53,7 +53,7 @@ function move(dir)
     if((ratio > 0.95) || (ratio < 0))
         return;
     
-    robot.style.left = robot_pos;
+    robot.style.left = robot_pos.toString() + "px";
     applyMotionModel(dir);
     if(document.getElementById("enable_measurement_checkbox").checked)
         applyMeasurementModel();
