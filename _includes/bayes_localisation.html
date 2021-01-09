@@ -1,4 +1,21 @@
 <style>
+    .container {
+        height: 200px;
+        position: relative;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 210px;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #reset_bt{
+        position: absolute;
+        top: 250px;
+    }
+
     #world {
         position: relative;
         margin: 35px;
@@ -9,6 +26,12 @@
         height: 100%;
         left: 0%;
     }
+    #door {
+        position: absolute;
+        height: 100%;
+        left: 40%;
+        top: 10px
+    }
     #line {
         position: absolute;
         top: 50px;
@@ -17,13 +40,24 @@
 <html>
     <head>
         <script src="/assets/js/bayes_localisaton.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
+        <body onload="updatePlot()"></body>
         <div id="world">
+            <embed id="door" src="/assets/images/door.svg">
             <embed id="robot" src="/assets/images/robot.svg">
             <embed id="line" src="/assets/images/line.svg">
         </div>
-        <button type="button" onclick="moveRight(1)">Move left</button>
-        <button type="button" onclick="moveRight(0)">Move right</button>
+        <div class="container">
+            <div id="plot"></div>
+            <div class="center">
+                <button type="button" onclick="move(1)">Move left</button>
+                <button type="button" onclick="move(0)">Move right</button>
+                <input type="checkbox" id="enable_measurement_checkbox" name="measurement">
+                <label>Enable sensor?</label><br>
+            </div>
+            <button type="button" id="reset_bt" class="center" onclick="resetProbabilities()">Reset Probabilities</button>
+        </div>
     </body>
 </html> 
