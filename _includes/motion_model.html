@@ -2,8 +2,23 @@
     .before{
         position: absolute;
     }
+    .before_center{
+        position: absolute;
+        left: 45px;
+        top: 45px;
+    }
+    .before_edge{
+        position: absolute;
+        left: 45px;
+        top: 5px;
+    }
+    .before_circle{
+        position: absolute;
+    }
+
     .after{
         position: absolute;
+        left: 150px;
     }
     .after_center{
         position: absolute;
@@ -27,7 +42,11 @@
         <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
     </header>
     <body>
-        <img id="before" class="before" src="/assets/images/circle.svg">
+        <div id="before" class="before">
+            <img src="/assets/images/circle.svg">
+            <img id="before_center" class="before_center" src="/assets/images/small_circle.svg">
+            <img id="before_edge" class="before_edge" src="/assets/images/small_circle.svg">
+        </div>
         <div id="after" class="after">
             <img src="/assets/images/circle.svg">
             <img id="after_center" class="after_center" src="/assets/images/small_circle.svg">
