@@ -1,0 +1,57 @@
+<style>
+    .before{
+        position: absolute;
+    }
+    .before_center{
+        position: absolute;
+        left: 45px;
+        top: 45px;
+    }
+    .before_edge{
+        position: absolute;
+        left: 45px;
+        top: 5px;
+    }
+    .before_circle{
+        position: absolute;
+    }
+
+    .after{
+        position: absolute;
+        left: 150px;
+    }
+    .after_center{
+        position: absolute;
+        left: 45px;
+        top: 45px;
+    }
+    .after_edge{
+        position: absolute;
+        left: 45px;
+        top: 5px;
+    }
+    .after_circle{
+        position: absolute;
+    }
+    .path{
+        position: absolute;
+    }
+</style>
+<html>
+    <header>
+        <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    </header>
+    <body>
+        <div id="before" class="before">
+            <img src="/assets/images/circle.svg">
+            <img id="before_center" class="before_center" src="/assets/images/small_circle.svg">
+            <img id="before_edge" class="before_edge" src="/assets/images/small_circle.svg">
+        </div>
+        <div id="after" class="after">
+            <img src="/assets/images/circle.svg">
+            <img id="after_center" class="after_center" src="/assets/images/small_circle.svg">
+            <img id="after_edge" class="after_edge" src="/assets/images/small_circle.svg">
+        </div>
+        <script src="/assets/js/motion_model.js"></script>
+    </body>
+</html>

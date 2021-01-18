@@ -40,7 +40,6 @@
 <html>
     <head>
         <script src="/assets/js/bayes_localisaton.js"></script>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
         <body onload="updatePlot()"></body>
@@ -49,7 +48,7 @@
             <embed id="robot" src="/assets/images/robot.svg">
             <embed id="line" src="/assets/images/line.svg">
         </div>
-        <div class="container">
+        <div class="container" style="margin-bottom:100px;">
             <div id="plot"></div>
             <div class="center">
                 <button type="button" onclick="move(1)">Move left</button>
