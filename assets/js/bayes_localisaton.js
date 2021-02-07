@@ -14,6 +14,27 @@ function updatePlot()
             t: 20,
             pad: 4
         },
+        xaxis: {
+            title: {
+                text: 'Robot position (x)',
+                font: {
+                    size: 18,
+                    color: '#7f7f7f'
+                }
+            },
+            automargin: true,
+            type: 'category',
+        },
+        yaxis: {
+            title: {
+              text: 'Probability p(x)',
+              font: {
+                size: 18,
+                color: '#7f7f7f'
+              }
+            },
+            automargin: true,
+        },
     };
     
     var data = [
